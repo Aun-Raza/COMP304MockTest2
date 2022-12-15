@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock Information" />
+
+    <Button
+        android:id="@+id/btnInsertStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert Stocks (Hardcore)"
+        android:onClick="insertStockInfo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select stock symbol:" />
+
+    <RadioGroup
+        android:id="@+id/rgStocks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/displayStockInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Stock Info"
+        android:onClick="displayStockInfo"/>
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
